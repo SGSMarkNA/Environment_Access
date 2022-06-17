@@ -10,7 +10,8 @@ if os.name == 'nt':
 	_APPS_BASE               = utilities.path_fixer(os.path.realpath(__this_dir+"/../../../Apps"))
 	_PIPE_BASE               = utilities.path_fixer(os.path.realpath(__this_dir+"/../../../Pipeline"))
 	_COMMON_BASE             = utilities.path_fixer(os.path.realpath("V:"))
-	_LIBRARY_BASE             = utilities.path_fixer(os.path.realpath("W:"))
+	_LIBRARY_BASE            = utilities.path_fixer(os.path.realpath("W:"))
+	_CODE_AMSTERDAM          = utilities.path_fixer(os.path.realpath(__this_dir+"/../../../Amsterdam"))
 elif os.name == 'posix':
 	_CODE_BASE               = utilities.path_fixer("/Volumes/aw_config/Git_Live_Code")
 	_APPS_BASE               = utilities.path_fixer(os.path.realpath("/Volumes/aw_config/Apps"))
@@ -41,6 +42,10 @@ _CODE_DEADLINE_SCRIPT_EXECUTE  = utilities.path_Builder(_CODE_GLOBAL_SYSTEMS, "D
 _CODE_PYTHON             = utilities.path_Builder(_APPS_BASE, "Python")
 _CODE_PYTHON_27          = utilities.path_Builder(_CODE_PYTHON, "Python27")
 _CODE_RV                 = utilities.path_Builder(_APPS_BASE, "RV")
+
+#Amsterdam Locations
+_CODE_AMSTERDAM_MAYA     = utilities.path_Builder(_CODE_AMSTERDAM, "Maya")
+
 
 # Software Code Location Paths
 _CODE_DEADLINE       = utilities.path_Builder(_CODE_SOFTWARE, "Deadline")
