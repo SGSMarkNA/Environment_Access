@@ -9,6 +9,9 @@ if os.name == 'nt':
 	_CODE_BASE               = utilities.path_fixer(os.path.realpath(__this_dir+"/../.."))
 	_APPS_BASE               = utilities.path_fixer(os.path.realpath(__this_dir+"/../../../Apps"))
 	_PIPE_BASE               = utilities.path_fixer(os.path.realpath(__this_dir+"/../../../Pipeline"))
+	_AMSTERDAM_BASE          = utilities.path_fixer(os.path.realpath(_CODE_BASE+"/../Amsterdam"))
+	_AMSTERDAM_NUKE          = utilities.path_fixer(os.path.realpath(_CODE_BASE+"/../Amsterdam/Nuke"))
+	_AMSTERDAM_MAYA          = utilities.path_fixer(os.path.realpath(_CODE_BASE+"/../Amsterdam/Maya"))
 	_COMMON_BASE             = utilities.path_fixer(os.path.realpath("V:"))
 	_LIBRARY_BASE             = utilities.path_fixer(os.path.realpath("W:"))
 elif os.name == 'posix':
@@ -67,6 +70,7 @@ _CODE_MAYA_BONUS_TOOLS_PYTHON_2015 = utilities.path_Builder(_CODE_MAYA_BONUS_TOO
 
 # Nuke Paths
 _CODE_NUKE              = utilities.path_Builder(_CODE_SOFTWARE, "Nuke")
+_CODE_NUKE_GIZMOS       = utilities.path_Builder(_CODE_SOFTWARE, "Nuke_Gizmos")
 _CODE_NUKE_GIZMOS       = utilities.path_Builder(_CODE_SOFTWARE, "Nuke_Gizmos")
 _CODE_NUKE_USER_TOOLS   = utilities.path_Builder(_CODE_AW_USER_TOOLS, "Nuke_User_Tools")
 _CODE_NUKE_PLUGINS      = utilities.path_Builder(_CODE_NUKE, "Plugins")
